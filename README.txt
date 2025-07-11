@@ -9,7 +9,5 @@ INSTRUCCIONES PARA PUBLICAR EN GITHUB PAGES:
     - images/portada.jpg
 4. Haz clic en "Commit changes".
 
-Tu web quedará publicada automáticamente en:
+La web quedará publicada automáticamente en:
 https://soulfulspectres.com
-
-La imagen de portada es 'En la antesala del sonido'. El estilo es limpio, elegante y adaptado a móvil.

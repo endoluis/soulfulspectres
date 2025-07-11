@@ -1,57 +1,95 @@
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soulful Spectres</title>
     <style>
-        body, html {
+        body {
             margin: 0;
-            padding: 0;
-            height: 100%;
+            background-color: #000;
             font-family: 'Georgia', serif;
-            color: #f4f0e8;
-        }
-
-        .hero {
-            background-image: url('portada.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-        }
-
-        .text-box {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 2rem;
+            color: #d8cba9;
             text-align: center;
+        }
+        header {
+            padding-top: 30px;
+        }
+        img.logo {
+            max-width: 180px;
+            height: auto;
+        }
+        .intro {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            font-size: 18px;
+        }
+        .main-image {
             width: 100%;
+            max-width: 600px;
+            margin: 40px auto 10px;
         }
-
-        .text-box h1 {
-            margin: 0;
-            font-size: 2.2rem;
+        .title {
+            font-size: 26px;
+            margin: 10px 0 5px;
         }
-
-        .text-box p {
-            margin: 0.5rem 0 0;
-            font-size: 1.1rem;
-            line-height: 1.4;
+        .description {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            padding: 0 20px;
+            font-size: 16px;
+        }
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #d8cba9;
+            background: transparent;
+            border: 1px solid #d8cba9;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <div class="text-box">
-            <h1>Soulful Spectres</h1>
-            <p>Universo visual independiente.<br>
-            Emoción sin artificio. Música hecha imagen.<br>
-            Cada obra, una presencia. Cada trazo, un latido.</p>
-        </div>
+    <button class="lang-switch" onclick="toggleLang()">ES / EN</button>
+    <header>
+        <img src="images/logo.png" alt="Soulful Spectres Logo" class="logo">
+    </header>
+    <div class="intro" id="intro-en">
+        Soulful Spectres is a visual universe where music, memory, and emotion intertwine. Each image is a portal to a personal soundscape, spectral and intimate.
     </div>
+    <div class="intro" id="intro-es" style="display:none;">
+        Soulful Spectres es un universo visual donde la música, la memoria y la emoción se entrelazan. Cada imagen es un portal hacia un paisaje sonoro personal, espectral e íntimo.
+    </div>
+    <img src="images/obra.png" alt="Main Artwork" class="main-image">
+    <div class="title">En la antesala del sonido</div>
+    <div class="description" id="desc-en">
+        A suspended moment before the first note. The pianist's hands poised, the silence trembling. A breath before the universe unfolds.
+    </div>
+    <div class="description" id="desc-es" style="display:none;">
+        Un instante suspendido antes de la primera nota. Las manos del pianista se elevan, el silencio tiembla. Un aliento antes de que el universo se despliegue.
+    </div>
+    <script>
+        function toggleLang() {
+            const en = document.getElementById('intro-en');
+            const es = document.getElementById('intro-es');
+            const dEn = document.getElementById('desc-en');
+            const dEs = document.getElementById('desc-es');
+            if (en.style.display === 'none') {
+                en.style.display = 'block';
+                es.style.display = 'none';
+                dEn.style.display = 'block';
+                dEs.style.display = 'none';
+            } else {
+                en.style.display = 'none';
+                es.style.display = 'block';
+                dEn.style.display = 'none';
+                dEs.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>

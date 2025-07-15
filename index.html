@@ -3,86 +3,36 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Soulful Spectres</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En la antesala del sonido</title>
     <style>
-        body {
+        html, body {
             margin: 0;
-            background-color: #000000;
-            color: #CCC6B6;
-            font-family: 'Lato', sans-serif;
-            text-align: center;
-        }
-        header {
-            padding: 2em 1em 1em 1em;
-        }
-        header h1 {
-            font-family: 'Cinzel', serif;
-            font-size: 2.5em;
-            margin-bottom: 0.3em;
-        }
-        .lang-toggle {
-            margin-bottom: 1em;
-            cursor: pointer;
-            font-size: 0.9em;
-            color: #999;
-        }
-        .presentation, .description {
-            max-width: 90%;
-            margin: 0 auto 1.5em auto;
-            line-height: 1.5em;
-            font-size: 1.1em;
-        }
-        .image-container {
-            margin: 0;
-        }
-        .image-container img {
+            padding: 0;
+            background-color: #000;
+            height: 100%;
             width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
         }
-        .description h2 {
-            font-family: 'Cinzel', serif;
-            margin-bottom: 0.2em;
-            font-size: 1.7em;
+        img {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .origen-access {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            z-index: 10;
         }
     </style>
-    <script>
-        function toggleLanguage() {
-            var langEs = document.getElementById("lang-es");
-            var langEn = document.getElementById("lang-en");
-            if (langEs.style.display === "none") {
-                langEs.style.display = "block";
-                langEn.style.display = "none";
-            } else {
-                langEs.style.display = "none";
-                langEn.style.display = "block";
-            }
-        }
-    </script>
 </head>
 <body>
-    <header>
-        <h1>Soulful Spectres</h1>
-        <div class="lang-toggle" onclick="toggleLanguage()">Cambiar idioma / Switch language</div>
-        <div class="presentation" id="lang-es">
-            Un universo visual donde la música se convierte en emoción visible. Cada imagen es un intérprete entre la luz y la sombra.
-        </div>
-        <div class="presentation" id="lang-en" style="display: none;">
-            A visual universe where music becomes visible emotion. Each image is a performer between light and shadow.
-        </div>
-    </header>
-    <div class="image-container">
-        <img src="images/portada.png" alt="En la antesala del sonido">
-    </div>
-    <div class="description" id="lang-es">
-        <h2>En la antesala del sonido</h2>
-        Pianista suspendido en el instante anterior a la música. La emoción aún no dicha, contenida en las manos.
-    </div>
-    <div class="description" id="lang-en" style="display: none;">
-        <h2>In the Antechamber of Sound</h2>
-        A pianist suspended in the moment before music. The unspoken emotion, held in the hands.
-    </div>
+    <img src="enlaantesaladelsonido.jpg" alt="">
+    <a href="origen.html" class="origen-access"></a>
 </body>
 </html>

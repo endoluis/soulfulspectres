@@ -1,35 +1,22 @@
+
 body {
     margin: 0;
-    background-color: #000;
-    font-family: 'Inter', sans-serif;
-    color: #e8dbc9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-color: black;
+    color: #cccccc;
+    font-family: 'Georgia', serif;
 }
-
-main {
+h1, h2, h3 {
     text-align: center;
-    width: 100%;
-    max-width: 1024px;
-    padding: 1rem;
+    color: #aaaaaa;
 }
-
-.portada {
-    width: 100%;
+img {
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto;
 }
-
-.texto h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.texto p.sub {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    white-space: pre-line;
+#logo {
+    width: 120px;
+    margin: 20px auto;
+    display: block;
 }

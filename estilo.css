@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #f0f0f0;
+  text-align: center;
+}
+.contenedor-principal {
+  padding: 0;
+}
+.imagen-principal {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: cover;
+}
+.triptico {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.triptico img {
+  height: 180px;
+  width: auto;
+  border: 1px solid #333;
+}
+.logo-acceso img {
+  width: 64px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}

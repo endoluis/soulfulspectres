@@ -1,0 +1,14 @@
+Versión estable de Soulful Spectres
+Estructura del sitio web cargada desde el móvil
+Incluye:
+ - index.html
+ - inicio.html
+ - origen.html
+ - style.css
+ - styles.css
+Imágenes (deben estar en la carpeta raíz):
+ - enlaantesaladelsonido.jpg
+ - origen-1.jpg
+ - origen-2.jpg
+ - origen-3.jpg
+ - logo.jpg

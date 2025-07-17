@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Origen – Soulful Spectres</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
       background-color: #000;
-      color: #ccc;
-      font-family: sans-serif;
+      color: #e0dcdc;
+      font-family: 'Inter', sans-serif;
       text-align: center;
     }
 
@@ -19,13 +20,24 @@
       font-size: 18px;
       max-width: 600px;
       margin: 40px auto 20px auto;
+      line-height: 1.6;
+    }
+
+    .bloque-obra {
+      margin: 60px 0 40px 0;
     }
 
     .imagen-origen {
       width: 100%;
       max-width: 1024px;
       display: block;
-      margin: 40px auto;
+      margin: 0 auto 10px auto;
+    }
+
+    .titulo-obra {
+      font-size: 16px;
+      opacity: 0.7;
+      letter-spacing: 0.5px;
     }
 
     .acceso-regreso {
@@ -47,9 +59,20 @@
     Esta es la primera: el origen fragmentado.
   </div>
 
-  <img src="origen-1.jpg" alt="Origen 1" class="imagen-origen">
-  <img src="origen-2.jpg" alt="Origen 2" class="imagen-origen">
-  <img src="origen-3.jpg" alt="Origen 3" class="imagen-origen">
+  <div class="bloque-obra">
+    <img src="origen-1.jpg" alt="Origen 1" class="imagen-origen">
+    <div class="titulo-obra">Origen I – Densidad Suspendida</div>
+  </div>
+
+  <div class="bloque-obra">
+    <img src="origen-2.jpg" alt="Origen 2" class="imagen-origen">
+    <div class="titulo-obra">Origen II – Gestación Interior</div>
+  </div>
+
+  <div class="bloque-obra">
+    <img src="origen-3.jpg" alt="Origen 3" class="imagen-origen">
+    <div class="titulo-obra">Origen III – Fractura en Silencio</div>
+  </div>
 
   <a href="index.html" class="acceso-regreso" title="Regresar"></a>
 

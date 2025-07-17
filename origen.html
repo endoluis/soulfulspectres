@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Origen – Soulful Spectres</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
       padding: 0;
       background-color: #000;
-      background-image: url('fondo-textura.jpg');
+      background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url('fondo-textura.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      color: #d7c8a8;
+      color: #b8ab91;
       font-family: 'Cardo', serif;
+      font-weight: 500;
       text-align: center;
     }
 
     .texto-inicio {
       padding: 20px;
-      font-size: 20px;
+      font-size: 19px;
       max-width: 600px;
       margin: 60px auto 30px auto;
       line-height: 1.7;
       font-style: italic;
+      letter-spacing: 0.2px;
     }
 
     .bloque-obra {
@@ -38,18 +42,17 @@
       max-width: 1024px;
       display: block;
       margin: 0 auto 12px auto;
-      /* Difuminado espectral más sutil desde todos los bordes */
       -webkit-mask-image: 
-        linear-gradient(to top,    transparent 0%, black 15%),
+        linear-gradient(to top, transparent 0%, black 15%),
         linear-gradient(to bottom, transparent 0%, black 15%),
-        linear-gradient(to left,   transparent 0%, black 15%),
-        linear-gradient(to right,  transparent 0%, black 15%);
+        linear-gradient(to left, transparent 0%, black 15%),
+        linear-gradient(to right, transparent 0%, black 15%);
       -webkit-mask-composite: destination-in;
       mask-image: 
-        linear-gradient(to top,    transparent 0%, black 15%),
+        linear-gradient(to top, transparent 0%, black 15%),
         linear-gradient(to bottom, transparent 0%, black 15%),
-        linear-gradient(to left,   transparent 0%, black 15%),
-        linear-gradient(to right,  transparent 0%, black 15%);
+        linear-gradient(to left, transparent 0%, black 15%),
+        linear-gradient(to right, transparent 0%, black 15%);
       mask-composite: intersect;
       mask-repeat: no-repeat;
       mask-position: center;
@@ -57,9 +60,9 @@
     }
 
     .titulo-obra {
-      font-size: 18px;
-      opacity: 0.85;
-      letter-spacing: 0.6px;
+      font-size: 17px;
+      opacity: 0.72;
+      letter-spacing: 0.5px;
       font-style: normal;
     }
 
@@ -77,33 +80,33 @@
 <body>
 
   <div class="texto-inicio">
-    No todas las puertas están marcadas.  
-    Algunas se abren por resonancia.  
+    No todas las puertas están marcadas.<br>
+    Algunas se abren por resonancia.<br>
     Esta es la primera: el origen fragmentado.
   </div>
 
   <div class="bloque-obra">
-    <img src="origen-1.jpg" alt="Origen 1" class="imagen-origen">
+    <img src="origen-1.jpg" alt="Origen 1" class="imagen-origen" />
     <div class="titulo-obra">Origen I – Densidad Suspendida</div>
   </div>
 
   <div class="bloque-obra">
-    <img src="origen-2.jpg" alt="Origen 2" class="imagen-origen">
+    <img src="origen-2.jpg" alt="Origen 2" class="imagen-origen" />
     <div class="titulo-obra">Origen II – Gestación Interior</div>
   </div>
 
   <div class="bloque-obra">
-    <img src="origen-3.jpg" alt="Origen 3" class="imagen-origen">
+    <img src="origen-3.jpg" alt="Origen 3" class="imagen-origen" />
     <div class="titulo-obra">Origen III – Fractura en Silencio</div>
   </div>
 
-  <!-- Botón simbólico logo.txt -->
+  <!-- Botón logo.txt -->
   <div style="margin: 100px auto 80px auto;">
     <a href="sistema.html" title="logo.txt">
       <img src="logo-soulfulspectres-btn.png" alt="logo.txt"
            style="width: 100px; opacity: 0.3; transition: opacity 0.3s ease;"
            onmouseover="this.style.opacity='0.8'" 
-           onmouseout="this.style.opacity='0.3'">
+           onmouseout="this.style.opacity='0.3'" />
     </a>
   </div>
 

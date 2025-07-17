@@ -1,72 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Tríptico Oculto</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #CCC6B6;
-            font-family: 'Lato', sans-serif;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 2em auto;
-            padding: 1em;
-        }
-        h1, h2 {
-            font-family: 'Cinzel', serif;
-            text-align: center;
-        }
-        p {
-            line-height: 1.6em;
-            font-size: 1.1em;
-        }
-        .image-block {
-            margin: 3em 0;
-            text-align: center;
-        }
-        .image-block img {
-            width: 100%;
-            max-width: 1000px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        .image-title {
-            margin-top: 1em;
-            font-size: 1.4em;
-            font-style: italic;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Origen – Soulful Spectres</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #ccc;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .texto-inicio {
+      padding: 20px;
+      font-size: 18px;
+      max-width: 600px;
+      margin: 40px auto 20px auto;
+    }
+
+    .imagen-origen {
+      width: 100%;
+      max-width: 1024px;
+      display: block;
+      margin: 40px auto;
+    }
+
+    .acceso-regreso {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      z-index: 10;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>El Tríptico Oculto</h1>
-        <p>
-            Tres imágenes. Tres estados. Tres niveles de desaparición. Este tríptico no narra, sino que revela: lo que aún recuerda, lo que ha perdido, lo que ya no es. 
-            No estás viendo obras. Estás cruzando umbrales.
-        </p>
 
-        <div class="image-block">
-            <img src="origen-1.jpg" alt="La imagen que recuerda">
-            <div class="image-title">I. La imagen que recuerda</div>
-        </div>
+  <div class="texto-inicio">
+    No todas las puertas están marcadas.  
+    Algunas se abren por resonancia.  
+    Esta es la primera: el origen fragmentado.
+  </div>
 
-        <div class="image-block">
-            <img src="origen-2.jpg" alt="La imagen que ha perdido">
-            <div class="image-title">II. La imagen que ha perdido</div>
-        </div>
+  <img src="origen-1.jpg" alt="Origen 1" class="imagen-origen">
+  <img src="origen-2.jpg" alt="Origen 2" class="imagen-origen">
+  <img src="origen-3.jpg" alt="Origen 3" class="imagen-origen">
 
-        <div class="image-block">
-            <img src="origen-3.jpg" alt="La imagen que ya no es imagen">
-            <div class="image-title">III. La imagen que ya no es imagen</div>
-        </div>
-    </div>
+  <a href="index.html" class="acceso-regreso" title="Regresar"></a>
+
 </body>
 </html>

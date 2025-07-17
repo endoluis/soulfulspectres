@@ -38,18 +38,18 @@
       max-width: 1024px;
       display: block;
       margin: 0 auto 12px auto;
-      /* Fusión espectral desde todos los bordes */
+      /* Difuminado espectral más sutil desde todos los bordes */
       -webkit-mask-image: 
-        linear-gradient(to top,    transparent 0%, black 20%),
-        linear-gradient(to bottom, transparent 0%, black 20%),
-        linear-gradient(to left,   transparent 0%, black 20%),
-        linear-gradient(to right,  transparent 0%, black 20%);
+        linear-gradient(to top,    transparent 0%, black 15%),
+        linear-gradient(to bottom, transparent 0%, black 15%),
+        linear-gradient(to left,   transparent 0%, black 15%),
+        linear-gradient(to right,  transparent 0%, black 15%);
       -webkit-mask-composite: destination-in;
       mask-image: 
-        linear-gradient(to top,    transparent 0%, black 20%),
-        linear-gradient(to bottom, transparent 0%, black 20%),
-        linear-gradient(to left,   transparent 0%, black 20%),
-        linear-gradient(to right,  transparent 0%, black 20%);
+        linear-gradient(to top,    transparent 0%, black 15%),
+        linear-gradient(to bottom, transparent 0%, black 15%),
+        linear-gradient(to left,   transparent 0%, black 15%),
+        linear-gradient(to right,  transparent 0%, black 15%);
       mask-composite: intersect;
       mask-repeat: no-repeat;
       mask-position: center;

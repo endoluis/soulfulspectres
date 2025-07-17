@@ -5,57 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soulful Spectres</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
       background-color: #000;
-      color: #fff;
-      font-family: sans-serif;
-      text-align: center;
+      overflow: hidden;
     }
 
-    .principal {
+    .imagen-principal {
+      width: 100vw;
+      height: 100vh;
+      background-image: url('enlaantesaladelsonido.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .acceso-invisible {
+      position: absolute;
+      bottom: 0;
+      left: 0;
       width: 100%;
-      max-width: 1024px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
+      height: 80px;
+      background: transparent;
+      cursor: pointer;
+      z-index: 2;
     }
 
-    .galeria {
-      margin-top: 20px;
-    }
-
-    .galeria img {
-      width: 30%;
-      max-width: 300px;
-      margin: 5px;
-    }
-
-    .logo {
-      margin-top: 40px;
-    }
-
-    .logo a {
-      color: #00aaff;
-      text-decoration: none;
-      font-weight: bold;
+    .acceso-invisible:hover {
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-
-  <img src="enlaantesaladelsonido.jpg" alt="Imagen principal Soulful Spectres" class="principal">
-
-  <div class="galeria">
-    <img src="origen-1.jpg" alt="Origen 1">
-    <img src="origen-2.jpg" alt="Origen 2">
-    <img src="origen-3.jpg" alt="Origen 3">
+  <div class="imagen-principal">
+    <a href="origen.html" class="acceso-invisible"></a>
   </div>
-
-  <div class="logo">
-    <a href="logo.jpg" target="_blank">Ver Logo Soulful Spectres</a>
-  </div>
-
 </body>
 </html>
+  

@@ -38,7 +38,14 @@
       max-width: 1024px;
       display: block;
       margin: 0 auto 12px auto;
-      box-shadow: 0 0 80px 40px rgba(0, 0, 0, 0.85); /* EFECTO DE FUSIÓN */
+      -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      -webkit-mask-size: 100% 100%;
+      mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: 100% 100%;
     }
 
     .titulo-obra {
